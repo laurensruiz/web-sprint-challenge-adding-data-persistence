@@ -9,8 +9,8 @@ const resources = [
 ]
 
 const tasks = [
-    {task_description:"Read",task_notes:null, task_completed:false,project_id: 1},
-    {task_description:"Write",task_notes:null, task_completed:false,project_id: 1},
+    {task_description:"Read",task_notes:null, task_completed:false, project_id: 1},
+    {task_description:"Write",task_notes:null, task_completed:false, project_id: 1},
 ]
 
 const project_resources = [
