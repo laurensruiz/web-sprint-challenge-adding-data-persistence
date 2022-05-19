@@ -10,9 +10,6 @@ server.use(express.json());
 
 //server.use('/api/recipes', RecipesRouter);
 
-//catchall
-/*server.use('*', (req, res) => {
-    res.json({api:'up'})
-})*/
+
 
 module.exports = server;
