@@ -5,9 +5,18 @@ const router = express.Router()
 
 router.get('/', async (req, res, next) => {
     try {
-        const resource = Resource.getAll()
+        const resource = await Resource.getAll()
         res.json(resource)
     } catch (err){
+        next(err)
+    }
+})
+
+router.post('/', async (req, res, next)=> {
+    try{
+        const resource = await Resource.create(req.body)
+        res.json(resource)
+    } catch(err){
         next(err)
     }
 })

@@ -37,6 +37,7 @@ exports.up = async function(knex) {
   })
   .createTable('project_resources', table => {
       table.increments('project_resource_id')
+      table.float('name')
       table.integer('project_id')
             .unsigned()
             .notNullable()
